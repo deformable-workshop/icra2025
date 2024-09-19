@@ -1,0 +1,679 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("2024-05-17T08:45:00.000+09:00");
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+
+<html>
+	<head>
+		<title>RMDO Workshop ICRA 2025</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- table style-->
+		<style>
+			a{
+				color: white;
+			}
+			#schedule_tab {
+			  font-family: Arial, Helvetica, sans-serif;
+			  border-collapse: collapse;
+			  width: 100%;
+			}
+
+			#schedule_tab td, #schedule_tab th {
+			  border: 2px solid #ddd;
+			  padding: 14px;
+			  color: white;
+			}
+
+			#schedule_tab tr:nth-child(even){background-color: #9fabbd;}
+
+			#schedule_tab tr:hover {background-color: #a8b9d2;}
+
+			#schedule_tab th {
+			  padding-top: 12px;
+			  padding-bottom: 12px;
+			  text-align: left;
+			  background-color: #374e73;
+			  color: white;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Home</a></li>
+							<li><a href="#content">Content</a></li>
+							<li><a href="#schedule">Schedule</a></li>
+							<li><a href="#papers">Call for Papers</a></li>
+
+							<li><a href="#talks">Invited speakers</a></li>
+							<li><a href="#org">Organizers</a></li>
+							<!--li><a href="#collab">Links</a></li-->
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Live -->
+					<!--section id="live" class="wrapper style3 fullscreen fade-up">
+						<div class="inner">
+							<h2>4th Workshop on Representing and Manipulating Deformable Objects @ <a href="https://www.icra2024.org/">ICRA2024</a> </h2>
+
+
+
+
+						</div>
+					</section-->
+
+<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+
+							<!--h1 id="demo"></h1-->
+
+							<h2>5th Workshop: Reflections on Representations and Manipulating Deformable Objects @ <a href="https://2025.ieee-icra.org/" target="_blank">ICRA2025</a> </h2>
+
+							
+
+							<p>
+							Over the past five years, significant progress has been made in deformable object (DO) manipulation, from breakthroughs in representation, simulation, and control to the integration of machine learning and large models for improved perception. Despite advancements, key challenges remain, particularly in developing a unified framework for DO representation across different domains. The "5th Workshop: Reflections on Representations and Manipulating Deformable Objects" aims to critically review these advancements and identify future research priorities. Topics include state representation, non-linear dynamic modeling, and the application of models like vision-language models (VLMs). The workshop will highlight advances in learning methods, such as reinforcement and imitation learning, which have improved robotic dexterity. It will also explore the role of low-cost hardware and open datasets in accelerating research.
+
+</p>
+
+
+
+							<!--h3> The workshop was held in <b>hybrid mode</b> with free remote participation</h3-->
+							<!--h3> The workshop was  held in <b>hybrid mode</b> </h3-->
+
+							<h3> Links: </h3>
+							<ul id="link_list">
+							<!--li> InfoVaya: <a href="https://events.infovaya.com/event?id=138" target="_blank">https://events.infovaya.com/event?id=138</a>  </li-->
+							<li> YouTube channel: <a href="https://www.youtube.com/channel/UCQFAnfbQK45enYDr8B0VdKw" target="_blank">https://www.youtube.com/channel/UCQFAnfbQK45enYDr8B0VdKw</a>  </li-->
+							<li>Link to 4th edition of the workshop: <a href="https://deformable-workshop.github.io/icra2024/" target="_blank">https://deformable-workshop.github.io/icra2024/</a></li>
+							<li>Link to 3rd edition of the workshop: <a href="https://deformable-workshop.github.io/icra2023/" target="_blank">https://deformable-workshop.github.io/icra2023/</a></li>
+							<li>Link to 2nd edition of the workshop: <a href="https://deformable-workshop.github.io/icra2022/" target="_blank">https://deformable-workshop.github.io/icra2022/</a></li>
+							<li>Link to 1st edition of the workshop: <a href="https://deformable-workshop.github.io/icra2021/" target="_blank">https://deformable-workshop.github.io/icra2021/</a></li>
+
+							</ul>
+
+
+
+
+						</div>
+					</section>
+
+
+
+
+					<!-- Method -->
+					<section id="content" class="wrapper style2 fade-up">
+						<div class="inner">
+							<h2>Content</h2>
+							<h3>Topics</h3>
+
+							<p>
+								The "5th Workshop: Reflections on Representations and Manipulating Deformable Objects" seeks to critically examine the progress made in enabling robots to autonomously manipulate deformable objects and to outline the remaining challenges. These objects, which are present in various domains such as domestic, industrial, and surgical environments, continue to pose significant challenges for robotics due to their complex dynamics and non-linear behaviors. Despite advances in representation, simulation, and control, there is still no unified solution that can generalize across the broad range of deformable objects.
+In recent years, the integration of large-scale pre-trained models, including vision-language models (VLMs) and foundation models, has opened new avenues for solving language-conditioned tasks and improving sample efficiency in robotic learning. These models, combined with recent developments in imitation learning, reinforcement learning, and advanced 3D representation models, have enhanced robots' ability to perform more complex, dexterous, and long-horizon tasks. Furthermore, the release of new simulators, open datasets, and accessible low-cost robotic hardware has greatly lowered the barriers to reproducible research, benchmarking, and reuse of data, allowing researchers to focus on deeper challenges in deformable object manipulation.
+This workshop will explore how these technological advances can be leveraged to overcome the persistent challenges in deformable object manipulation. 
+Key topics will include:
+
+
+<ul>
+  <li>Representation and state estimation</li>
+  <li> Simulation and modeling </li>
+  <li>Transfer from simulation to reality</li>
+  <li>Learning to manipulate using data-driven methods such as reinforcement learning and learning from demonstrations </li>
+  <li>Perception: state tracking, parameter identification, property detection (e.g. landmarks for
+garments) and classification, etc. </li>
+  <li>Control, visual servoing and planning</li>
+  <li> Use of foundation models, such as large vision and language models, and associated large datasets</li>
+  <li>Specialized tools, e.g. grippers, and sensors</li>
+	<!--li>Multi-arm manipulation<--/li>
+  <li>Application-specific challenges: cloth folding, surgical tasks, precision agriculture, etc.</li>
+</ul>
+
+							</p>
+
+
+
+							<p> </p>
+<!--
+							<h3>Workshop format </h3>
+						<p>
+						The workshop will include:
+<ul><li>Invited talks by selected speakers, each consisting of about 25 minutes of live presentation followed by 5 minutes for Q&A;<\li>
+<li>Accepted extended abstracts (3 pages with unlimited references and appendix) presented in poster sessions and selected spotlight talks. In case of a hybrid or virtual workshop, we will ask for pre-recorded spotlight talks for a smoother execution in case of connection issues. However, for each selected contribution, at least one author will be required to be present during the workshop for a live Q&A session;  </li>
+<li>A group discussion session where different discussion groups will be formed from the attendees. Each group will be moderated by an organizer and will focus on a specific topic in the scope of the workshop. Moreover, organizers will annotate relevant insights during the discussions and will share them with the entire audience during the last part of this session. If a virtual component exists, we will facilitate participation with the help of breakout rooms.  </li>
+<li>A panel discussion at the end of the workshop, moderated by the organizers,  for discussing challenges and promising directions for deformable object manipulation with experts of the field. Speakers will be informed in advance of the selected topics to make the discussion more effective.
+	</p>
+-->
+
+						</div>
+					</section>
+
+
+				<!-- Schedule -->
+					<section id="schedule" class="wrapper style3 spotlights">
+						<div class="inner">
+							<h2>Schedule  <!-- a href="schedule_poster_panel.pdf" target="_blank">[PDF]</a--></h2>
+							<hr style="width:80%;text-align:left;margin-left:5">
+							<div class="row">
+
+									<p></p>
+				    				<h3><b> TBA </b></h3>
+
+							</div>
+
+							<!-- h3>Time Zone: GMT +09</h3>
+							
+							<table id="schedule_tab">
+						  <tr>
+						    <th>Time</th>
+						    <th>Activity</th>
+						  </tr>
+						  <tr>
+						    <td>08:45 - 09:00</td>
+						    <td>Workshop opening <a href="https://youtu.be/sJqEKOYKYdo" target="_blank">[Video]</a>  </td>
+						  </tr>
+						  <tr>
+						    <td>09:00 - 09:30</td>
+						    <td> <b> David Held </b> [Remote] - Spatially-aware Robot Learning for Deformable Object Manipulation <a href="https://youtu.be/OAVlWupYjxM" target="_blank">[Video]</a> <br></li>
+								</td>
+						  </tr>
+						  <tr>
+						    <td>09:30 - 10:15</td>
+						    <td> Spotlight talks #1 
+						    <ul>
+						    	<li> <b>Alessio Caporali</b>, Piotr Kicki, Kevin Galassi, Riccardo Zanella, Krzysztof Walas and Gianluca Palli - Deformable Linear Objects Manipulation with Online Model Parameters Estimation <a href="spotlight/01_01_wdo_caporali_deformable.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/zdcAsmtAI7w" target="_blank">[Video]</a> <br></li>
+						    	<li> <b>Alessio Caporali</b>, Kevin Galassi, Matteo Pantano, Gianluca Palli - Sparse to Dense: Robotic Perception of Deformable Objects via Foundation Models  <a href="spotlight/01_02_wdo_caporali_sparse.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/1O9_wqtCOHY" target="_blank">[Video]</a> <br></li>
+						    	<li> <b>Mingrui Yu</b>, Kangchen Lv, Changhao Wang, Yongpeng Jiang, Masayoshi Tomizuka and Xiang Li - Generalizable Whole-Body Global Manipulation of Deformable Linear Objects by Dual-Arm Robot in 3-D Constrained Environments   <a href="spotlight/01_03_wdo_yu_generalizable.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/1sn9HWpyG1M" target="_blank">[Video]</a> <br></li>
+						    	<li> <b>Yuhong Deng</b>, David Hsu - Generalizable Clothes Manipulation with Large Language Model   <a href="spotlight/01_04_wdo_deng_generalizable.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/SSO9URQautY" target="_blank">[Video]</a> <br></li>
+						    	<li> <b>Kejia Chen∗</b> , Zhenshan Bing∗ , Fan Wu∗ , Yansong Wu, Liding Zhang, Sami Haddadin, Alois Knoll - Real-time Contact State Estimation in Shape Control of Deformable Linear Objects under Small Environmental Constraints <a href="spotlight/01_05_wdo_chen_realtime.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/2vTB1VM4uB0" target="_blank">[Video]</a> <br></li>
+						    	<li> <b>Amisha Bhaskar</b>, Rui Liu, Guangyao Shi, Pratap Tokekar - LAVA: Long-horizon Visual Action based Food Acquisition <a href="spotlight/01_06_wdo_bhaskar_lava.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/Fl5Lrn-K7vQ" target="_blank">[Video]</a> <br></li>
+						    	<li> Kaifeng Zhang* , <b>Baoyu Li*</b> , Kris Hauser, Yunzhu Li - AdaptiGraph: Material-Adaptive Graph-Based Neural Dynamics for Robotic Manipulation <a href="spotlight/01_07_wdo_zhang_adaptigraph.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/lL0J_aLPKFM" target="_blank">[Video]</a> <br></li>
+						    	<li> <b>Mingrui Yu</b>, Boyuan Liang, Xiang Zhang, Xinghao Zhu, Xiang Li, and Masayoshi Tomizuka - In-Hand Following of Deformable Linear Objects Using Dexterous Fingers with Tactile Sensing <a href="spotlight/01_08_wdo_yu_inhand.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/Gi0S0wexTXM" target="_blank">[Video]</a> <br></li>
+						    	<li> <b>Haoran Lu*</b>, Yitong Li*, Ruihai Wu*, Chuanruo Ning, Yan Shen, Hao Dong - UniGarment: A Unified Simulation and Benchmark for Garment Manipulation <a href="spotlight/01_09_wdo_lu_unigarment.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/ZqEgs5ZJAIc" target="_blank">[Video]</a> <br></li>
+						    	<li> <b>Simeon Adebola*</b>, Tara Sadjadpour*, Karim El-Refai*, Will Panitch, Zehan Ma, Roy Lin, Tianshuang Qiu, Shreya Ganti, Charlotte Le, Jaimyn Drake, and Ken Goldberg - Automating Deformable Gasket Assembly <a href="spotlight/01_10_wdo_adebola_automating.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/0tfjxucbv2s" target="_blank">[Video]</a> <br></li>
+						    	<li> <b>Alberta Longhini</b>, Michael C. Welle, Zackory Erickson, and Danica Kragic - AdaFold: Adapting Folding Trajectories of Cloths via Feedback-loop Manipulation <a href="spotlight/01_11_wdo_longhini_adafold.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/carGSpYqdZs" target="_blank">[Video]</a> <br></li>
+						    	
+						    </ul>
+
+						    </td>
+						  </tr>
+						  <tr>
+						    <td>10:15 - 10:45</td>
+						    <td>Coffee break + Poster presentation					    </td>
+						  </tr>
+						  <tr>
+						    <td>10:45 - 11:15</td>
+						    <td> <b> Chelsea Finn </b> [Remote] - Learning Long-Horizon Bi-Manual Tasks involving Deformable Object Manipulation <a href="https://youtu.be/MAI-IJieiGU" target="_blank">[Video]</a>
+						    </td>
+						  </tr>
+						  <tr>
+						    <td>11:15 – 11:45</td>
+						    <td> <b> Michael Yip </b> - Deformable Manipulation for Autonomous Surgical Robots  <a href="https://youtu.be/WPqrDDEvsyg" target="_blank">[Video]</a> </td>
+						  </tr>
+						  <tr>
+						    <td>11:45 – 12:15</td>
+						    <td> <b> Gonzalo Lopez-Nicolas </b> - Multi-scale analysis for shape control of texture-less objects  </td>
+						  </tr>
+
+						  <tr>
+						    <td>12:15 - 14:00</td>
+						    <td>Lunch + extra Poster time </td>
+						  </tr>
+						  <tr>
+						    <td>14:00 – 14:30</td>
+						    <td> <b> Jeffrey Ichnowski </b> - Deformable Manipulator for Deformable Manipulation <a href="https://youtu.be/qYJEhYxcsso" target="_blank">[Video]</a> </td>
+						  </tr>
+						  <tr>
+						  <td>14:30 – 15:00</td>
+						  <td>
+										<b> David Hsu </b> - Differentiable Particles for General-Purpose Deformable Object Manipulation <a href="https://youtu.be/zG7o-cgtCrs" target="_blank">[Video]</a> </td>
+						  </tr>
+						  <tr>
+						    <td>15:00 – 15:45</td>
+						    <td>
+										Spotlight talks 2 
+										<ul>
+						    	<li> <b>Zeqing Zhang</b>, Guanqi Chen, Wentao Chen, Ruixing Jia, Liangjun Zhang and Jia Pan - GmClass: Granular Material Classification through Force Feedback of Robotic Manipulation <a href="spotlight/02_01_wdo_zhang_gmclass.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/T7-Z3ujqAL4" target="_blank">[Video]</a> <br></li>
+						    	<li> <b>Shaoxiong Yao</b>, Yifan Zhu, and Kris Hauser - Structured Bayesian Meta-Learning for Data-Efficient Visual-Tactile Model Estimation <a href="spotlight/02_02_wdo_yao_structured.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/y8vUKA5GVGs" target="_blank">[Video]</a> <br></li>
+						    	<li> <b>Raquel Marcos-Saavedra</b>, Miguel Aranda, and Gonzalo López-Nicolás - Multirobot transport of deformable objects using deformation modes <a href="spotlight/02_03_wdo_marcossaavedra_multirobot.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/Lm27TvNG9Cw" target="_blank">[Video]</a> <br></li>
+						    	<li> <b>Martin Filliung</b>, Juliette Drupt, Charly Peraud, Claire Dune, Nicolas Boizot, Andrew Comport, Cedric Anthierens, Vincent Hugel - An Augmented Catenary Model for Underwater Tethered Robots <a href="spotlight/02_04_wdo_filliung_augmented.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/4MGx6piNLsQ" target="_blank">[Video]</a> <br></li>
+						    	<li> <b>Luca Beber</b>, Edoardo Lamon, Davide Nardi, Daniele Fontanelli, Matteo Saveriano, Luigi Palopoli - A Passive Variable Impedance Control Strategy with Viscoelastic Parameters Estimation of Soft Tissues for Safe Ultrasonography <a href="spotlight/02_05_wdo_beber_passive.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/5C5tEpG1-iI" target="_blank">[Video]</a> <br></li>
+						    	<li> <b>Rui Liu</b>, Amisha Bhaskar, Pratap Tokekar - Adaptive Visual Imitation Learning for Robotic Assisted Feeding Across Varied Bowl Configurations and Food Types <a href="spotlight/02_06_wdo_liu_adaptive.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/qKiQkDzjCWQ" target="_blank">[Video]</a> <br></li>
+						    	<li> <b>Jingyi Xiang</b>, Holly Dinkel, Harry Zhao, Naixiang Gao, Brian Coltin, Trey Smith, Timothy Bretl - TrackDLO: Tracking Deformable Linear Objects Under Occlusion with Motion Coherence <a href="spotlight/02_07_wdo_xiang_trackdlo.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/OOgPZOQYRc4" target="_blank">[Video]</a> <br></li>
+						    	<li> <b>Chikaha Tsuji</b>, Enrique Coronado, Pablo Osorio and Gentiane Venture - Adaptive contact-rich manipulation through few-shot imitation learning with tactile feedback and pre-trained object representations <a href="spotlight/02_08_wdo_tsuji_adaptive.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/wjS1Om5kO2Q" target="_blank">[Video]</a> <br></li>
+						    	<li> Paul Maria Scheikl, <b>Nicolas Schreiber</b>, Christoph Haas, Niklas Freymuth, Gerhard Neumann, Rudolf Lioutikov, and Franziska Mathis-Ullrich - Movement Primitive Diffusion: Learning Gentle Robotic Manipulation of Deformable Objects <a href="spotlight/02_09_wdo_scheikl_movement.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/jJkwIw7_Emw" target="_blank">[Video]</a> <br></li>
+						    	<li> Ruihai Wu*, Haoran Lu*, Yiyan Wang, Yubo Wang, <b>Hao Dong</b> - UniGarmentManip: A Unified Framework for Category-Level Garment Manipulation via Dense Visual Correspondence <a href="spotlight/02_10_wdo_wu_unigarmentmanip.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/N5NYt-XJDOs" target="_blank">[Video]</a> <br></li>
+						    	<li> <b>Hiroto ARASAKI</b>, Sena TAKAHASHI, and Akio NAMIKI - Realtime Paper Shape Estimation for Origami Robot System <a href="spotlight/02_11_wdo_arasaki_realtime.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/OVuhKlttxcY" target="_blank">[Video]</a> <br></li>
+						    	
+						    	
+						    </ul>
+
+
+									</td>
+						  </tr>
+						  <tr>
+						    <td>15:45 – 16:15</td>
+						    <td>Coffee break + Poster presentation 
+
+						    </td>
+						  </tr>
+						  <tr>
+						    <td>16:15- 16:45</td>
+						    <td> <b> Dmitry Berenson </b> - Two routes toward long-horizon deformable object manipulation <a href="https://youtu.be/KKLdHryd0t8" target="_blank">[Video]</a>
+
+
+
+						    </td>
+						  </tr>
+						  <tr>
+						    <td>16:45 – 17:00</td>
+						    <td>Best Abstract award & Closing remarks <a href="https://youtu.be/hpXhjpZyxRc" target="_blank">[Video]</a> </td>
+						  </tr>
+						</table-->
+
+
+					</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<!-- call for papers -->
+					<section id="papers" class="wrapper style4 fullscreen fade-up">
+						<div class="inner">
+							<h2>Call for papers</h2>
+
+
+							<p> We invite participants to submit extended abstracts <b>3+n</b> pages, with n pages (no page-limit) for the bibliography, in the <a href="https://journals.ieeeauthorcenter.ieee.org">IEEE conference style</a>. </p>
+							<p> Submissions will be reviewed by experts of their respective field. The accepted abstracts will be made available on the workshop website but will not appear in the official IEEE conference proceedings.
+							 Participants are encouraged to submit their recent work on the topics of interest mentioned above.
+							<!--contributions that highlight challenges in their particular sub-field as well as works that show potential synergies of combining different subfields for deformable objects manipulation. -->
+							Contributions are encouraged, but are not required, to be original. </p>
+							<p> The review process will be single-blind, meaning the submitted paper does not need to be anonymized.</p>
+
+							<p> Abstracts can be submitted through Microsoft CMT: TBA <!--a href="https://cmt3.research.microsoft.com/WDOICRA2024">https://cmt3.research.microsoft.com/WDOICRA2024</a-->. </p>
+					
+							<p> </p>
+							<!--h3>IEEE RAS Computer & Robot Vision workshop award</h3>
+							<p>We are happy to announce the <b>WDO Best Abstract Award </b> sponsored by the <a href="https://www.ieee-ras.org/computer-robot-vision" target="_blank">IEEE RAS Technical Committee Computer & Robot Vision</a>.
+							The selected contribution will receive a <b> prize of 400$</b>.
+							Any extended abstract submitted to the workshop will be automatically considered for the award.</p-->
+
+							<p> <h3>Important dates: (dd/mm/yyyy) </h3> </p>
+
+							<ul>
+								  <li>Submission Deadline: <b>TBA</b> (23:59 PST)  </li>
+								  <li>Notification date: <b>TBA </b> (23:59 PST) </li>
+								  <li>Final submission: <b>TBA </b> (23:59 PST)</li>
+
+								  <li>Workshop date: <b> TBA </b>
+ 								</li>
+							</ul>
+
+						
+						</div>
+					</section>
+
+
+
+					<!-- Schedule -->
+					<section id="talks" class="wrapper style2 spotlights">
+						<div class="inner">
+							<h2>Invited Speakers (alphabetical order): TBA</h2>
+
+							<!--div class="row">
+							  <div class="column">
+							    <img src="imgs/dmitry2.jpg" alt="Dmitry Berenson" class="img-list">
+							  </div>
+							  <div class="column" >
+									<p></p>
+				    				<h3 class='name-list'><b>  Dmitry Berenson </b></h3>
+
+				    				<div class='info-list'>
+									<br>
+									 Associate Professor
+									<br>
+									 University of Michigan, USA
+									<br>
+									<a href="https://berenson.robotics.umich.edu/" target="_blank">Personal website</a>
+									<br>
+									</div>
+									<p class='talk-list'>
+									<b> Talk title:</b> Two routes toward long-horizon deformable object manipulation
+ <br>
+								</p>							
+
+							  </div>
+							</div>
+							<p>
+							<b> Bio:</b> Dmitry Berenson received a B.S. in Electrical and Computer Engineering from Cornell University in 2005, where he started his robotics work in Hod Lipson's lab. He went on to graduate from the Ph.D. program at the Robotics Institute at Carnegie Mellon University (CMU) in 2011, where his advisors were Siddhartha Srinivasa and James Kuffner. While at CMU, Dmitry Berenson worked in the Personal Robotics Lab and completed interships at the Digital Human Research Center in Japan, Intel Labs in Pittsburgh, and LAAS-CNRS in France. In 2012 he completed a post-doc at UC Berkeley working with Ken Goldberg and Pieter Abbeel. Dmitry Berenson was an Assistant Professor at WPI 2012-2016. He started as faculty at the University of Michigan in 2016. His current research focuses on learning and motion planning for manipulation. Dmitry Berenson has received the IEEE RAS Early Career Award and the NSF CAREER award. <br>
+									</p>
+
+							<hr style="width:80%;text-align:left;margin-left:5">
+
+
+							<div class="row">
+							  <div class="column">
+							    <img src="imgs/sail_headshot_left_facing_crop.jpg" alt="Chelsea Finn" class="img-list">
+							  </div>
+							  <div class="column">
+									<p></p>
+				    				<h3 class='name-list'><b>  Chelsea Finn </b></h3>
+
+				    				<div class='info-list'>
+									<br>
+									 Assistant Professor
+									<br>
+									 Stanford University, USA
+									<br>
+									<a href="https://ai.stanford.edu/~cbfinn/" target="_blank">Personal website</a>
+									<br>
+									</div>
+									<p class='talk-list'>
+									<b> Talk title:</b> Learning Long-Horizon Bi-Manual Tasks involving Deformable Object Manipulation <br>
+								</p>							
+
+							  </div>
+							</div>
+							<p>
+							<b> Bio:</b> Chelsea Finn is an Assistant Professor in Computer Science and Electrical Engineering at Stanford University. Her research interests lie in the capability of robots and other agents to develop broadly intelligent behavior through learning and interaction. To this end, her work has pioneered end-to-end deep learning methods for vision-based robotic manipulation, meta-learning algorithms for few-shot learning, and approaches for scaling robot learning to broad datasets. Her research has been recognized by awards such as the Sloan Fellowship, the IEEE RAS Early Academic Career Award, and the ACM doctoral dissertation award, and has been covered by various media outlets including the New York Times, Wired, and Bloomberg. Prior to Stanford, she received her Bachelor's degree in Electrical Engineering and Computer Science at MIT and her PhD in Computer Science at UC Berkeley. <br>
+									</p>
+
+							<hr style="width:80%;text-align:left;margin-left:5">
+
+
+							<div class="row">
+							  <div class="column">
+							    <img src="imgs/DavidHeld.jpg" alt="David Held" class="img-list">
+							  </div>
+							  <div class="column">
+									<p></p>
+				    				<h3 class='name-list'><b>  David Held </b></h3>
+
+				    				<div class='info-list'>
+									<br>
+									 Associate Professor
+									<br>
+									 Carnegie Mellon University (CMU), USA
+									<br>
+									<a href="https://davheld.github.io/" target="_blank">Personal website</a>
+									<br>
+									</div>
+									<p class='talk-list'>
+									<b> Talk title:</b> Spatially-aware Robot Learning for Deformable Object Manipulation <br>
+								</p>							
+
+							  </div>
+							</div>
+							<p>
+							<b> Bio:</b> David Held is an Associate Professor at Carnegie Mellon University in the Robotics Institute and is the director of the RPAD lab: Robots Perceiving And Doing. His research focuses on perceptual robot learning, i.e. developing new methods at the intersection of robot perception and planning for robots to learn to interact with novel, perceptually challenging, and deformable objects. David has applied these ideas to robot manipulation and autonomous driving. Prior to coming to CMU, David was a post-doctoral researcher at U.C. Berkeley, and he completed his Ph.D. in Computer Science at Stanford University. David also has a B.S. and M.S. in Mechanical Engineering at MIT. David is a recipient of the Google Faculty Research Award in 2017 and the NSF CAREER Award in 2021. <br>
+									</p>
+
+							<hr style="width:80%;text-align:left;margin-left:5">
+
+
+							<div class="row">
+							  <div class="column">
+							    <img src="imgs/davidPhoto.jpg" alt="David Hsu" class="img-list">
+							  </div>
+							  <div class="column">
+									<p></p>
+				    				<h3 class='name-list'><b>  David Hsu</b></h3>
+
+				    				<div class='info-list'>
+									<br>
+									 Provost's Chair Professor
+									<br>
+									 National University of Singapore, Singapore
+									<br>
+									<a href="https://www.comp.nus.edu.sg/~dyhsu/" target="_blank">Personal website</a>
+									<br>
+									</div>
+									<p class='talk-list'>
+									<b> Talk title:</b> Differentiable Particles for General-Purpose Deformable Object Manipulation <br>
+								</p>							
+
+							  </div>
+							</div>
+							<p>
+							<b> Bio:</b> David Hsu is a professor of computer science and the Director of Smart Systems Institute at the National University of Singapore (NUS).  He is an IEEE Fellow. 
+His research lies in the intersection of robotics and AI. In recent years, he has been working on robot planning and learning under uncertainty for human-centered robots. His work won multiple international awards, including, most recently, Test of Time Award at Robotics: Science & Systems (RSS) in 2021 and IJCAI-JAIR Best Paper Prize in 2022. He has chaired or co-chaired several international robotics conferences, including WAFR 2010, RSS 2015, ICRA 2016, and CoRL 2021. He served on the editorial boards of Journal of Artificial Intelligence Research and International Journal of Robotics Research. He is currently an Editor of IEEE Transactions on Robotics. <br>
+									</p>
+
+							<hr style="width:80%;text-align:left;margin-left:5">
+
+
+							<div class="row">
+							  <div class="column">
+							    <img src="imgs/jeff_ichnowski.jpg" alt="Jeff Ichnowski" class="img-list">
+							  </div>
+							  <div class="column">
+									<p></p>
+				    				<h3 class='name-list'><b>  Jeff Ichnowski</b></h3>
+
+				    				<div class='info-list'>
+									<br>
+									 Assistant Professor
+									<br>
+									 Carnegie Mellon University (CMU), USA
+									<br>
+									<a href="https://ichnow.ski/" target="_blank">Personal website</a>
+									<br>
+									</div>
+									<p class='talk-list'>
+									<b> Talk title:</b> Deformable Manipulator for Deformable Manipulation<br>
+								</p>							
+
+							  </div>
+							</div>
+							<p>
+							<b> Bio:</b> Jeff Ichnowski is an assistant professor at Carnegie Mellon University's Robotics Institute. He was a postdoc at UC Berkeley's Sky Computing/RISE lab, AUTOLAB, and BAIR. Before returning to academia, he was the principal architect at SuccessFactors, Inc., one of the world's largest cloud-based software-as-a-service companies. His research explores robot algorithms and systems for high-speed motion, task, and manipulation planning, using cloud-based high-performance computing, optimization, and deep learning. <br>
+									</p>
+
+							<hr style="width:80%;text-align:left;margin-left:5">
+
+
+
+							<div class="row">
+							  <div class="column">
+							    <img src="imgs/Gonzalo_Lopez-Nicolas.jpg" alt="Gonzalo Lopez" class="img-list">
+							  </div>
+							  <div class="column">
+									<p></p>
+				    				<h3 class='name-list'><b> Gonzalo Lopez</b></h3>
+
+				    				<div class='info-list'>
+									<br>
+									 Professor
+									<br>
+									 Universidad de Zaragoza, Spain
+									<br>
+									<a href="https://webdiis.unizar.es/~glopez/" target="_blank">Personal website</a>
+									<br>
+									</div>
+									<p class='talk-list'>
+									<b> Talk title:</b> Multi-scale analysis for shape control of texture-less objects<br>
+								</p>							
+
+							  </div>
+							</div>
+							<p>
+							<b> Bio:</b> Gonzalo Lopez-Nicolas is currently a Professor with Universidad de Zaragoza and Aragon Institute for Engineering Research (I3A). His current research interests include shape control, visual control, multi-robot systems, and the application of computer vision to robotics. <br>
+									</p>
+
+							<hr style="width:80%;text-align:left;margin-left:5">
+
+
+							<div class="row">
+							  <div class="column">
+							    <img src="imgs/croppedprofile_zoom_JPG.webp" alt="Michael Yip" class="img-list">
+							  </div>
+							  <div class="column">
+									<p></p>
+				    				<h3 class='name-list'><b> Michael Yip</b></h3>
+
+				    				<div class='info-list'>
+									<br>
+									 Associate Professor
+									<br>
+									 University of California, San Diego, USA
+									<br>
+									<a href="http://www.ucsdarclab.com" target="_blank">Personal website</a>
+									<br>
+									</div>
+									<p class='talk-list'>
+									<b> Talk title:</b> Deformable Manipulation for Autonomous Surgical Robots<br>
+								</p>							
+
+							  </div>
+							</div>
+							<p>
+							<b> Bio:</b> Michael Yip, Ph.D., is an Associate Professor at the University of California San Diego and the Director of Advanced Robotics and Controls Lab (ARClab) at UCSD. His research group works at the intersection of medical robotics, machine learning, and computer vision, with applications towards robotic surgery, physical human-robot interaction, autonomous driving, and search and rescue. His research group have won numerous awards at robotics and AI venues. Dr. Yip was previously a Research Associate with Disney Research, a Visiting Professor at Stanford University, and a Visiting Professor with Amazon Robotics.  <br>
+									</p>
+
+							<hr style="width:80%;text-align:left;margin-left:5">
+
+
+
+							<!--ul>
+								<li>Dmitry Berenson, Associate Professor, University of Michigan, USA</li>
+								<li>Chelsea Finn, Assistant Professor, Stanford University, USA</li>
+								<li>David Held, Associate Professor, Carnegie Mellon University, USA</li>
+								<li>David Hsu, Professor, National University of Singapore, Singapore</li>
+								<li>Jeff Ichnowski, Assistant Professor, Carnegie Mellon University, USA</li>
+								<li>Gonzalo Lopez, Professor, Universidad de Zaragoza, Spain</li>
+								<li>Michael Yip, Associate Professor, University of California, San Diego, USA</li>
+		
+
+
+
+							</ul>
+
+							<hr style="width:80%;text-align:left;margin-left:5"-->
+
+
+
+
+					</section>
+
+					<!-- org -->
+					<section id="org" class="wrapper style3 spotlights">
+						<div class="inner">
+							<h2>Organizers </h2>
+							<ul>
+							  <li>Alberta Longhini, KTH Royal Institute of Technology, Sweden</li>
+							  <li>Michael C. Welle, KTH Royal Institute of Technology, Sweden</li>
+							  <li>Martina Lippi, Roma Tre University, Italy</li>
+  							  <li>Lawrence Yunliang Chen, University of California, Berkeley, USA</li>
+							  <li>Daniel Seita, University of Southern California, USA</li>
+							  <li>Danica Kragic, KTH Royal Institute of Technology, Sweden</li>
+							  <li>David Held, Carnegie Mellon University, USA</li>
+							</ul>
+					</section>
+
+					<!-- collaberations -->
+					<!--section id="collab" class="wrapper style4 fade-up">
+						<div class="inner">
+							<h2>Links</h2>
+							<ul>
+							<li>
+							  <b>Conference website:</b> Link to the conference website <a href="https://www.ieee-icra.org/">https://www.ieee-icra.org/</a>
+							</li>
+							</ul>
+						</div>
+					</section-->
+
+
+
+
+					<!-- contact -->
+					<section id="contact" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Contact</h2>
+							 <p> If you have any questions please contact Alberta Longhini at the email: <b>albertal AT kth DOT se </b>  </p>
+						</div>
+					</section>
+
+
+
+
+			</div>
+
+		<!-- Footer -->
+		<!-- TBD -->
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
