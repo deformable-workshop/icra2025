@@ -229,7 +229,7 @@ garments) and classification, etc. </li>
 <li>Oriol Barbany*; Adrià Colomé; Carme Torras; <b>Beyond Static Perception: Integrating Temporal Context into VLMs for Cloth Folding <a href="spotlight/01_04_13_Barbany_beyond.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/5jef2jdInvU" target="_blank">[Video]</a></b></li>
 <li>Jay Kamat*; Júlia Borràs; Carme Torras; <b>A compact cloth state representation that enables generalization across different cloth shapes <a href="spotlight/01_05_14_Kamat_compact.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/sNZBkpTk85Y" target="_blank">[Video]</a></b></li>
 <li>Holly Dinkel*; Marcel Büsching; Alberta Longhini; Brian Coltin; Trey Smith; Danica Kragic; Mårten Björkman; Timothy Bretl; <b>DLO-Splatting: Tracking Deformable Linear Objects Using 3D Gaussian Splatting <a href="spotlight/01_06_15_Dinkel_DLO-Splatting.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/CG4WDWumGXA" target="_blank">[Video]</a></b></li>
-<li>Yuhong Deng*; <b> General-purpose Clothes Manipulation with Semantic Keypoints <a href="spotlight/01_07_17_Deng_general.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/oc_r4mdx_cc" target="_blank">[Video]</a></b></li>
+<li>Yuhong Deng*; David Hsu; <b> General-purpose Clothes Manipulation with Semantic Keypoints <a href="spotlight/01_07_17_Deng_general.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/oc_r4mdx_cc" target="_blank">[Video]</a></b></li>
 <li>Mahdi Bonyani*; Maryam Soleymani; Chao Wang; <b>Robust Shape-Free Manipulation through a Graph-Based Reinforcement Learning Approach for Deformable Objects <a href="spotlight/01_08_18_Bonyani_robust.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/hUULJDIh44Q" target="_blank">[Video]</a></b></li>
       </ul>
     </td>
@@ -282,8 +282,11 @@ garments) and classification, etc. </li>
 <li>Alessio Caporali*; Gianluca Palli;<b> Multi-View Model-Based Visual Tracking of Deformable Linear Objects  <a href="spotlight/02_05_09_Caporali_multi.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/DAoNi7xFxTk" target="_blank">[Video]</a></b></li>
 <li>Zhaole Sun*; <b>Dexterous Cable Manipulation: An Initial Exploration <a href="spotlight/02_06_12_Sun_dexterous.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/ASfQpc0gG6c" target="_blank">[Video]</a></b></li>
 <li>Nidhya Shivakumar*; Justin Yu; Veena Sumedh; Josh Zhang; Ethan Ransing; Osher Azulay; Ken Goldberg; <b>HANDLOOM 3.0: Interactive Bi-Directional Cable Tracing Amid Clutter <a href="spotlight/02_07_16_Shivakumar_HANDLOOM.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/GJJB4h1eWbU" target="_blank">[Video]</a></b></li>
-<li>Simeon Adebola*; Chung Min Kim; Justin Kerr; Shuangyu Xie; Prithvi Akella; Jose Luis Susa Rincon; Eugen Solowjow; Ken Goldberg; <b>A “Botany-Bot” for Digital Twin Monitoring of Occluded and Underleaf Plant Structures <a href="spotlight/02_08_19_Adebola_botany-bot.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/oc_r4mdx_cc" target="_blank">[Video]</a></b></li>
-      </ul>
+<li>Simeon Adebola*; Chung Min Kim; Justin Kerr; Shuangyu Xie; Prithvi Akella; Jose Luis Susa Rincon; Eugen Solowjow; Ken Goldberg; <b>A “Botany-Bot” for Digital Twin Monitoring of Occluded and Underleaf Plant Structures <a href="spotlight/02_08_19_Adebola_botany-bot.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/Lq9jlzFiHuQ" target="_blank">[Video]</a></b></li>
+ <li>Kaifeng Zhang*; Baoyu Li; Kris Hauser; Yunzhu Li; <b>Particle-Grid Neural Dynamics for Learning Deformable Object Models from Depth Images <a href="spotlight/02_09_20_Particle_Grid_Neural_Dynamics.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/Lq9jlzFiHuQ" target="_blank">[Video]</a></b></li>
+
+
+ </ul>
     </td>
   </tr>
 
