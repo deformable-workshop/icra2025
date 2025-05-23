@@ -79,6 +79,7 @@ var x = setInterval(function() {
 				<div class="inner">
 					<nav>
 						<ul>
+							<li><a href="#live">Live</a></li>
 							<li><a href="#intro">Home</a></li>
 							<li><a href="#content">Content</a></li>
 							<li><a href="#schedule">Schedule</a></li>
@@ -97,15 +98,16 @@ var x = setInterval(function() {
 			<div id="wrapper">
 
 				<!-- Live -->
-					<!--section id="live" class="wrapper style3 fullscreen fade-up">
+					<section id="live" class="wrapper style3 fullscreen fade-up">
 						<div class="inner">
-							<h2>4th Workshop on Representing and Manipulating Deformable Objects @ <a href="https://www.icra2024.org/">ICRA2024</a> </h2>
+							<h2>5th Workshop: Reflections on Representations and Manipulating Deformable Objects @ <a href="https://2025.ieee-icra.org/" target="_blank">ICRA2025 - IS LIVE</a> </h2>
 
+							<iframe width="1120" height="630" src="https://www.youtube.com/embed/da0U3lamgLM?si=xNAaXauA_ovlv6Yg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
 						</div>
-					</section-->
+					</section>
 
 <!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
@@ -221,7 +223,7 @@ garments) and classification, etc. </li>
   <tr>
     <td>09:15 - 10:00</td>
     <td>
-      Spotlight Talks #1 (TBA)
+      Spotlight Talks #1 
       <ul>
 		<li>Mahdiar Edraki*; Silvia Buscaglione; Rakshith Lokesh; John Peter Whitney; Alireza Ramezani; Dagmar Sternad; <b>Human-Inspired Robot Whip Manipulation: Preparatory Actions Increase Range and Reduce Control Effort <a href="spotlight/01_01_05_Edraki_Human.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/e08K-8K7hFE" target="_blank">[Video]</a></b></li>
 <li>Wendi Chen*; Han Xue; Fangyuan Zhou; Yuan Fang; Cewu Lu; <b>DeformPAM: Data-Efficient Learning for Long-horizon Deformable Object Manipulation via Preference-based Action Alignment <a href="spotlight/01_02_10_Chen_DeformPAM.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/0zYwjLtcpQk" target="_blank">[Video]</a></b></li>
@@ -247,7 +249,7 @@ garments) and classification, etc. </li>
 
   <tr>
     <td>11:30 - 12:00</td>    
-    <td><b>Shuran Song</b> [In person] - TBD</td>
+    <td><b>Shuran Song</b> [In person] - Five Lessons Learned on Deformable Object Manipulation</td>
   </tr>
 
   <tr>
@@ -262,20 +264,20 @@ garments) and classification, etc. </li>
 
   <tr>
     <td>13:30 - 14:00</td>
-    <td><b>Zackory Erickson</b> [Remote] - TBD</td>
+    <td><b>Zackory Erickson</b> [Remote] - Physical HRI with Deformable Manipulation</td>
   </tr>
 
   <tr>
     <td>14:00 - 14:30</td>
-    <td><b>Chuang Gan</b> [In person] - TBD</td>
+    <td><b>Chuang Gan</b> [In person] - Genesis: A Generative and Universal Physics Engine for Robotics</td>
   </tr>
 
   <tr>
     <td>14:30 - 15:15</td>
     <td>
-      Spotlight Talks #2 (TBA)
+      Spotlight Talks #2 
       <ul>
-        <li>Hanxiao Jiang*; Hao-Yu Hsu; Kaifeng Zhang; Hsin-Ni Yu; Shenlong Wang; Yunzhu Li; <b>PhysTwin: Physics-Informed Reconstruction and Simulation of Deformable Objects from Videos <a href="spotlight/02_01_03_Jiang_PhysTwin.pdf" target="_blank">[PDF]</a>  <a href="" target="_blank">[Video]</a></b></li>
+        <li>Hanxiao Jiang*; Hao-Yu Hsu; Kaifeng Zhang; Hsin-Ni Yu; Shenlong Wang; Yunzhu Li; <b>PhysTwin: Physics-Informed Reconstruction and Simulation of Deformable Objects from Videos <a href="spotlight/02_01_03_Jiang_PhysTwin.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/j5XLZepGMno" target="_blank">[Video]</a></b></li>
 <li>Kavish Kondap*; Osher Azulay; Jaimyn Drake; Shuangyu Xie; Hui Li; Sachin Chitta; Ken Goldberg; <b>Adaptive Cable Manipulation Around Constrained Fixtures with Bi-Manual Slack Control <a href="spotlight/02_02_04_Kondap_adaptive.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/MpmCXLxb_k4" target="_blank">[Video]</a></b></li>
 <li>Andreas Mueller*; <b>Analytic Continuum Forward Kinematics of Deformable Linear Objects under Static Conditions <a href="spotlight/02_03_07_Mueller_analytic.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/cw4dqlJoqLo" target="_blank">[Video]</a></b></li>
 <li>Nikhil Shinde*; Xiao Liang; Fei Liu; Yutong Zhang; Florian Richter; Sylvia Herbert; Michael Yip; <b>JIGGLE: An Active Sensing Framework for Boundary Parameters Estimation in Deformable Surgical Environments <a href="spotlight/02_04_08_Shinde_JIGGLE.pdf" target="_blank">[PDF]</a>  <a href="https://youtu.be/pLAgEewAUL0" target="_blank">[Video]</a></b></li>
@@ -490,11 +492,11 @@ garments) and classification, etc. </li>
 									<br>
 									 Carnegie Mellon University (CMU), USA
 									<br>
-									<a href="https://davheld.github.io/" target="_blank">Personal website</a>
+									<a href="https://zackory.com/" target="_blank">Personal website</a>
 									<br>
 									</div>
 									<p class='talk-list'>
-									<b> Talk title:</b> TBD <br>
+									<b> Talk title:</b> Physical HRI with Deformable Manipulation <br>
 								</p>							
 
 							  </div>
@@ -524,7 +526,7 @@ garments) and classification, etc. </li>
 									<br>
 									</div>
 									<p class='talk-list'>
-									<b> Talk title:</b> TBD <br>
+									<b> Talk title:</b> Genesis: A Generative and Universal Physics Engine for Robotics <br>
 								</p>							
 
 							  </div>
@@ -629,7 +631,7 @@ garments) and classification, etc. </li>
 									<br>
 									</div>
 									<p class='talk-list'>
-									<b> Talk title:</b> TBD<br>
+									<b> Talk title:</b> Five Lessons Learned on Deformable Object Manipulation<br>
 								</p>							
 
 							  </div>
